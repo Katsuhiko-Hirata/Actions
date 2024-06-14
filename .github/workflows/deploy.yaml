@@ -1,0 +1,14 @@
+name: Deploy
+
+on:
+  push:
+    branches: 
+      - br_gr
+  workflow_dispatch:
+
+jobs:
+  Deploy_Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execute echo command
+        run: echo "Deploy Sample"
