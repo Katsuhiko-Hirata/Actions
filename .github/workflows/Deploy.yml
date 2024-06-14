@@ -5,5 +5,7 @@ on:
 
 jobs:
   dummy_jobs:
+    runs-on: ubuntu-latest
     steps:
       - name: execute echo command
+        run: echo "dummy"
