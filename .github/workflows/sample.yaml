@@ -3,12 +3,12 @@ name: Sample
 on:
   push:
     branches: 
-      - main
+      - br_gr
   workflow_dispatch:
 
 jobs:
-  print-hello-world:
+  br-hello-world:
     runs-on: ubuntu-latest
     steps:
       - name: execute echo command
-        run: echo "Hello World! 2nd"
+        run: echo "br sample"
